@@ -10,6 +10,13 @@
     <body>
         <h1>This is My Project</h1>
         <p>Welcome ... !!.Started 5 Sept ...</p>
+        <p>Last updated on: <time id="last-updated"></time></p>
+        <script>
+            document.getElementById("last-updated").textContent = new Date(
+                document.lastModified
+            ).toLocaleString();
+        </script>
+
         <h2>At first the page will have trivia and random text </h2>
 
         <h2>About</h2>
@@ -23,11 +30,5 @@
             flamboyance. and cats are pest....  Sheep grow wool
         </p>
 
-        <p>Last updated on: <time id="last-updated"></time></p>
-        <script>
-            document.getElementById("last-updated").textContent = new Date(
-                document.lastModified
-            ).toLocaleString();
-        </script>
     </body>
 </html>
