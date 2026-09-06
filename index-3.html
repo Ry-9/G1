@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -20,6 +21,13 @@
         <p>
             Octopuses have three hearts, and a group of flamingos is called a
             flamboyance. and cats are pest....  Sheep grow wool
-        </p>     
+        </p>
+
+        <p>Last updated on: <time id="last-updated"></time></p>
+        <script>
+            document.getElementById("last-updated").textContent = new Date(
+                document.lastModified
+            ).toLocaleString();
+        </script>
     </body>
 </html>
